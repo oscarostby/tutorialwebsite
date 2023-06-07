@@ -1,0 +1,255 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Home Section Styles */
+.home-section {
+  background-color: #222;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.home-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Courses Section Styles */
+.courses-section {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.courses-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.course-card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.course-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.rating-stars {
+  color: #fdd835;
+}
+
+.rating-label {
+  margin-left: 10px;
+}
+
+.watch-now-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.watch-now-button:hover {
+  background-color: #222;
+}
+
+/* Why Us Section Styles */
+.why-us-section {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+
+.why-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.why-us-info {
+  width: 50%;
+}
+
+.why-us-info h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.why-us-info ul {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.why-us-info ul li {
+  margin-bottom: 10px;
+}
+
+.why-us-video {
+  width: 50%;
+  position: relative;
+}
+
+.why-us-video video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin-top: 10px;
+}
+
+/* Hover Animations */
+.course-card:hover .rating-stars {
+  animation: glow 1s infinite alternate;
+}
+
+.watch-now-button:hover {
+  background-color: #111;
+}
+
+@keyframes glow {
+  0% {
+    color: #fdd835;
+    text-shadow: 0 0 5px #fdd835;
+  }
+  100% {
+    color: #fdd835;
+    text-shadow: 0 0 20px #fdd835;
+  }
+}

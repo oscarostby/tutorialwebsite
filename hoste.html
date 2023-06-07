@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oscar's Super Kurs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="back-button">
+    <a href="index.html">&larr; Back</a>
+  </div>
+
+  <section id="video">
+    <div class="container">
+      <div class="video-wrapper">
+        <video controls>
+          <source src="Comp 2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="description">
+        <h2>Oscar's Super Kurs HOSTE NETTSIDE</h2>
+        <p>Dette er verdens beste kurs på nettside hosting. Vi snakker om mye rart og viser og demosnsterer.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-links">
+          <h3>Quick linker</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Følg oss</h3>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Oscar's Super Kurs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
+    .back-button a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .back-button a:hover {
+      text-decoration: underline;
+    }
+
+    /* Video Styles */
+    #video {
+      background-color: #f4f4f4;
+      padding: 80px 0;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .description {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .description h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .description p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .footer-links h3,
+    .footer-social h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul li,
+    .footer-social ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul li a,
+    .footer-social ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .footer-links ul li a:hover,
+    .footer-social ul li a:hover {
+      opacity: 0.8;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-bottom p {
+      margin-top: 10px;
+    }
+  </style>
+</body>
+
+</html>
